@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Lab 4</title>
+    <meta charset="UTF-8">
+    <title>auto part</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <h1>Lab 4</h1>
-    <p>Lab 4 content goes here.</p>
-    <a href="../index.html">Back to Labs</a>
+    <h1>creat auto part Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form method="post" action=''> 
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="first-name">First Name: <input id="first-name" name="first-name" type="text"
+                    required placeholder="Enter Your First Name:" /></label>
+            <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text"
+                    required placeholder="Enter Your Last Name:"/></label> 
+            <label for="email">Email: <input id="email" name="email" type="email" required placeholder="Enter Your Email:" /></label>
+            <label for="phone">Phone: <input id="phone" name="phone" required type="number"  placeholder="Enter Your phone"></label>
+
+
+            <label for="make">Make: <input id="make" name="make" type="text" required placeholder="Make:"/></label>
+            <label for="model">Model: <input id="model" name="model" type="text" required placeholder="Model"/></label>
+            <label for="year">Year: <input id="year" name="year" type="number" required placeholder="Year" max="2024"/></label>
+            <label for="dob">Date of Birth<input id="dob" name="date" type="date"></label>
+                        <!--<label for="new-password">Create a New Password: <input id="new-password" name="new-password"
+                    type="password" pattern="[a-z0-5]{8,}" required /></label>-->
+            <label for="spare Part">Spare Part: <input id="spare Part" name="spare Part" type="text" required placeholder="enter the Spare Part you need"/></label>
+            <label for="quantity">Quantity: <input id="quantity" name="quantity" type="number" required placeholder="Enter the Quantity you need" /></label>
+            <label for="Commments">Commments: <textarea id="Commments" class="Commments"name="Commments" rows="3" cols="30" placeholder="commints"></textarea></label>
+                </fieldset>
+
+
+        <input type="submit" value="Submit" />
+    </form>
+
+
+
 </body>
+
 </html>
