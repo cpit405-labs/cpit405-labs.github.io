@@ -3,16 +3,50 @@
 
 <head>
     <title>Lab 3</title>
+    <style>div{
+        border: 2px solid black;
+      }
+      .box-1{
+        width: 50%;
+      }
+      .box-2{
+        width: 50%;
+      }
+      .parent{
+        width:100px;
+        height: 100px;
+        border-color: red;
+      }
+      .box-3{
+        width: 50vw;
+        border-color: blue;
+      }
+      .box-4{
+        height: 50vh;
+        border-color: green;
+      }</style>
 </head>
 
 <body>
-    <h1>Lab 3</h1>
-    <p>Lab 3 content goes here.</p>
-    <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/gwwbzgax-the-decoder/embed/gOEKray?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-        See the Pen <a href="https://codepen.io/gwwbzgax-the-decoder/pen/gOEKray">
-        Untitled</a> by كوروشيرو اكاجراي (<a href="https://codepen.io/gwwbzgax-the-decoder">@gwwbzgax-the-decoder</a>)
-        on <a href="https://codepen.io">CodePen</a>.
-      </iframe>
+    <h1>CSS Units: Percentages % vs (viewports)</h1>
+    <h2>Percentages are relatives to their parents:</h2>
+    <div class="box-1">
+        Box-1: This is a 50% wide box (relative to the body)
+        <div class="box-2">
+            Box-2: This is a 50% wide box inside box-1 (50% relative to box-1)
+        </div>
+    </div>
+    <h2>vw are relatives to the viewport (screen) and do not follow the parent at all:</h2>
+    <div class="parent">
+        parent is 100x100 pixels box
+        <div class="box-3">
+            Box-3: This is a 50vw box (50% of the viewport's width)
+        </div>
+        <div class="box-4">
+            Box-4: This is a 50vh box (50% of the viewport's height)
+        </div>
+    </div>
+ht="300" src="//jsfiddle.net/Koroshero/uvz604sf/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 </body>
 
