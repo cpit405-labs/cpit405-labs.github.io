@@ -1,0 +1,16 @@
+body{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+button{
+    padding: 7% 7%;
+    font-size: 2rem;
+}
+btn1{
+    background-color: red;
+}
+#btn2{
+    background-color: green;
+}
