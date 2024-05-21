@@ -3,7 +3,8 @@
 
 <head>
     <title>Lab 3</title>
-    <style>div{
+    <!--
+    div{
         border: 2px solid black;
       }
       .box-1{
@@ -24,10 +25,89 @@
       .box-4{
         height: 50vh;
         border-color: green;
-      }</style>
+      } --> 
+    <style> 
+    .image-preview img {
+        width: 100px;
+        height: 100px;
+        border: 30px solid;
+        border-color: skyblue lightpink lightgreen #ffefd5;
+        overflow: hidden;}
+
+      p > span { color: red; }
+      #header span { color: pink; }
+      span { color: green; }
+      #header *:last-child { color: orange; }
+      #header span:first-child:hover { color: blue; }
+    
+
+
+    </style>
+
+
 </head>
 
 <body>
+
+  <h1>LAB 3</h1>
+  <h2>Part1 imge</h2>
+
+  <div class="image-preview">
+    <img src='https://cpit405.gitlab.io/images/KAU_logo.png'/>
+  </div>
+  <hr>
+  <h2>Part2</h2>
+  <div id="header">
+    <span class="myclass1">Every</span>
+    <span class="myclass2">one can</span>
+    <span class="myclass3">success.</span>
+  </div>
+  <p> One machine can do the work of fifty ordinary men.
+    <span class="myclass4">No machine can do the work of one extraordinary man.</span>
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th spancol="2">class</th>
+        <th></th>
+        <th spancol="2">color</th>
+        <th></th>
+        <th>color on when mouse over</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td spancol="2">my class 1</td>
+        <td></td>
+        <td spancol="2">pink</td>
+        <td></td>
+        <td>blue</td>
+      </tr>
+      <tr>
+        <td spancol="2">my class 2</td>
+        <td></td>
+        <td spancol="2">pink</td>
+        <td></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td spancol="2">my class 3</td>
+        <td></td>
+        <td spancol="2">orange</td>
+        <td></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td spancol="2">my class 4</td>
+        <td></td>
+        <td spancol="2">red</td>
+        <td></td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+  <!--
     <h1>CSS Units: Percentages % vs (viewports)</h1>
     <h2>Percentages are relatives to their parents:</h2>
     <div class="box-1">
@@ -47,7 +127,7 @@
         </div>
     </div>
 ht="300" src="//jsfiddle.net/Koroshero/uvz604sf/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
+  -->
 </body>
 
 </html>
