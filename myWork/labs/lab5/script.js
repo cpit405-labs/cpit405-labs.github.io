@@ -11,8 +11,8 @@ main.appendChild(photo);
 // btn creation
 let dbtn = document.createElement('button');
 dbtn.innerText = 'Delete';
-dbtn.onclick = function(){        
+dbtn.addEventListener("click", function(){        
     main.removeChild(photo);
-    main.removeChild(dbtn);
-}
+    this.removeChild(dbtn); // referint to the button(dbtn)
+});
 main.appendChild(dbtn);
