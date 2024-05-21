@@ -5,13 +5,25 @@ const initLikes = 0;
 const initDisLikes = 0;  
 likes.innerText = "👍 " + initLikes;
 disLikes.innerText = "👎 " + initDisLikes;
-let xor = true;
-
-let cliced = false;
-let clicedCount = 0;
 
 let likeCount = 0;
 let disLikeCount = 0;
+
+
+let cliced = false;
+let xor = true;
+
+let clicedCount = 0;
+
+function handelClicks(){};
+
+
+
+
+
+
+
+
 
 function handelLiks(){
     cliced = xor;
