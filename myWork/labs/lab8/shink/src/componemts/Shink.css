@@ -1,0 +1,41 @@
+.form-group{
+    position: absolute;
+    right: 29%;
+    width: 40%;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(236, 209, 174, 0.708);
+}
+.form-group2{
+    text-align: left;
+}
+.form-group3{
+    text-align: left;
+}
+.form-group label{
+    display: block;
+    font-weight: 500;
+}
+#btn{
+    background-color: rgb(0, 128, 255);
+    color: aliceblue;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px 6px 5px 6px;
+    font-weight: 700;
+    margin: 14px 2px;
+}
+#btn:hover{
+    background-color: rgb(2, 87, 172);
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 5px 6px 5px 6px;
+    font-weight: 700;
+}
+#shortUrl{
+    background-color: rgb(198, 198, 198);
+}
+input{
+    width: 100%;
+}
