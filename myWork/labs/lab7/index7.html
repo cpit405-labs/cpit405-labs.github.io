@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lab 7</title>
+    <title>lab7</title>
+
+    <style>
+        img {
+            width: 290px;
+            height: 349px;
+            margin: 10px;
+        }
+
+        input {
+            padding: 5px;
+            border: 3px solid #003600;
+        }
+
+        button {
+            padding: 5px;
+        }
+    </style>
+
 </head>
+
 <body>
-    <h1>Lab x</h1>
-    <p>Lab x content goes here.</p>
-    <a href="../index.html">Back to Labs</a>
+    <header>
+        <input id="albumIdField" type="text" placeholder="Search GIFs">
+        <button id="xhrSearch">Search using XHR</button>
+        <button id="fetchSearch">Search using fetch</button>
+        <button id="fetchAsyncAwaitSearch">Search using fetch with async/await</button>
+    </header>
+    <div id="searchResults"></div>
+    <script src="./script7.js"></script>
 </body>
+
 </html>
